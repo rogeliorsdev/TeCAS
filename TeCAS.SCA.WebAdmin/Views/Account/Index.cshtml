@@ -1,0 +1,59 @@
+﻿@model IEnumerable<AccountVM>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="row mb-3">
+    <div class="col-md-12">
+        <div class="">
+            <div class=""><h6>Cuentas / Lista de cuentas</h6></div>
+            <hr />
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        @if (@TempData["messageSuccess"] != null)
+        {
+            <div class="alert alert-success" role="alert">@TempData["messageSuccess"]</div>
+        }
+
+        <div class="card">
+            <div class="card-body p-2">
+                <table class="table" id="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>@Html.DisplayNameFor(model => model.NoAccount)</th>
+                            <th>@Html.DisplayNameFor(model => model.CustomerName)</th>
+                            <th>@Html.DisplayNameFor(model => model.CreateAt)</th>
+                            <th>@Html.DisplayNameFor(model => model.TypeNameAccount)</th>
+                            <th>Operaciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbDatos"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/sweetalert.js"></script>
+    <script src="~/js/generic.js"></script>
+    <script>
+
+        window.onload = function () {
+            var url = "Account/GetAccounts";
+            pintar(url,
+                ["noAccount", "customerName", "createAt", "typeNameAccount"],
+                "id", "Account");
+        }
+
+        window.setTimeout(function () {
+            $(".alert").fadeTo(500, 0).slideUp(500, function () {
+                $(this).remove();
+            });
+        }, 4000);
+    </script>
+}

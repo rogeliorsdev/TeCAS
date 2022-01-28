@@ -1,0 +1,26 @@
+﻿table.dataTable thead th, table.dataTable thead td {
+    padding: 6px 18px;
+    padding: 5px 5px;
+    border-bottom: 1px solid #111;
+}
+
+table.dataTable tbody th, table.dataTable tbody td {
+    padding: 8px 10px;
+    padding: 5px 5px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.galeria img {
+    height: 40rem;
+    width: 40rem;
+    object-fit: cover;
+}
+
+.img-tecas {
+    display: flex;
+    justify-content: center;
+}

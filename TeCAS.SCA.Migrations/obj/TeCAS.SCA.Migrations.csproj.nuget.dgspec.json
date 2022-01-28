@@ -1,0 +1,355 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\tecas-sca-project\\TeCAS.SCA\\TeCAS.SCA.Migrations\\TeCAS.SCA.Migrations.csproj": {}
+  },
+  "projects": {
+    "C:\\tecas-sca-project\\TeCAS.SCA\\TeCAS.SCA.DAL\\TeCAS.SCA.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\tecas-sca-project\\TeCAS.SCA\\TeCAS.SCA.DAL\\TeCAS.SCA.DAL.csproj",
+        "projectName": "TeCAS.SCA.DAL",
+        "projectPath": "C:\\tecas-sca-project\\TeCAS.SCA\\TeCAS.SCA.DAL\\TeCAS.SCA.DAL.csproj",
+        "packagesPath": "C:\\Users\\rogelio\\.nuget\\packages\\",
+        "outputPath": "C:\\tecas-sca-project\\TeCAS.SCA\\TeCAS.SCA.DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\rogelio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\tecas-sca-project\\TeCAS.SCA\\TeCAS.SCA.Entities\\TeCAS.SCA.Entities.csproj": {
+                "projectPath": "C:\\tecas-sca-project\\TeCAS.SCA\\TeCAS.SCA.Entities\\TeCAS.SCA.Entities.csproj"
+              },
+              "C:\\tecas-sca-project\\TeCAS.SCA\\TeCAS.SCA.Helpers\\TeCAS.SCA.Helpers.csproj": {
+                "projectPath": "C:\\tecas-sca-project\\TeCAS.SCA\\TeCAS.SCA.Helpers\\TeCAS.SCA.Helpers.csproj"
+              },
+              "C:\\tecas-sca-project\\TeCAS.SCA\\TeCAS.SCA.Services\\TeCAS.SCA.Services.csproj": {
+                "projectPath": "C:\\tecas-sca-project\\TeCAS.SCA\\TeCAS.SCA.Services\\TeCAS.SCA.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.22, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\tecas-sca-project\\TeCAS.SCA\\TeCAS.SCA.Entities\\TeCAS.SCA.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\tecas-sca-project\\TeCAS.SCA\\TeCAS.SCA.Entities\\TeCAS.SCA.Entities.csproj",
+        "projectName": "TeCAS.SCA.Entities",
+        "projectPath": "C:\\tecas-sca-project\\TeCAS.SCA\\TeCAS.SCA.Entities\\TeCAS.SCA.Entities.csproj",
+        "packagesPath": "C:\\Users\\rogelio\\.nuget\\packages\\",
+        "outputPath": "C:\\tecas-sca-project\\TeCAS.SCA\\TeCAS.SCA.Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\rogelio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\tecas-sca-project\\TeCAS.SCA\\TeCAS.SCA.Helpers\\TeCAS.SCA.Helpers.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\tecas-sca-project\\TeCAS.SCA\\TeCAS.SCA.Helpers\\TeCAS.SCA.Helpers.csproj",
+        "projectName": "TeCAS.SCA.Helpers",
+        "projectPath": "C:\\tecas-sca-project\\TeCAS.SCA\\TeCAS.SCA.Helpers\\TeCAS.SCA.Helpers.csproj",
+        "packagesPath": "C:\\Users\\rogelio\\.nuget\\packages\\",
+        "outputPath": "C:\\tecas-sca-project\\TeCAS.SCA\\TeCAS.SCA.Helpers\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\rogelio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[3.1.22, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[3.1.22, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\tecas-sca-project\\TeCAS.SCA\\TeCAS.SCA.Migrations\\TeCAS.SCA.Migrations.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\tecas-sca-project\\TeCAS.SCA\\TeCAS.SCA.Migrations\\TeCAS.SCA.Migrations.csproj",
+        "projectName": "TeCAS.SCA.Migrations",
+        "projectPath": "C:\\tecas-sca-project\\TeCAS.SCA\\TeCAS.SCA.Migrations\\TeCAS.SCA.Migrations.csproj",
+        "packagesPath": "C:\\Users\\rogelio\\.nuget\\packages\\",
+        "outputPath": "C:\\tecas-sca-project\\TeCAS.SCA\\TeCAS.SCA.Migrations\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\rogelio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\tecas-sca-project\\TeCAS.SCA\\TeCAS.SCA.DAL\\TeCAS.SCA.DAL.csproj": {
+                "projectPath": "C:\\tecas-sca-project\\TeCAS.SCA\\TeCAS.SCA.DAL\\TeCAS.SCA.DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.22, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.22, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\tecas-sca-project\\TeCAS.SCA\\TeCAS.SCA.Services\\TeCAS.SCA.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\tecas-sca-project\\TeCAS.SCA\\TeCAS.SCA.Services\\TeCAS.SCA.Services.csproj",
+        "projectName": "TeCAS.SCA.Services",
+        "projectPath": "C:\\tecas-sca-project\\TeCAS.SCA\\TeCAS.SCA.Services\\TeCAS.SCA.Services.csproj",
+        "packagesPath": "C:\\Users\\rogelio\\.nuget\\packages\\",
+        "outputPath": "C:\\tecas-sca-project\\TeCAS.SCA\\TeCAS.SCA.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\rogelio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\tecas-sca-project\\TeCAS.SCA\\TeCAS.SCA.Entities\\TeCAS.SCA.Entities.csproj": {
+                "projectPath": "C:\\tecas-sca-project\\TeCAS.SCA\\TeCAS.SCA.Entities\\TeCAS.SCA.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+﻿@model TransactionMoneyVM
+@{
+    ViewData["Title"] = "HaveMoney";
+
+    string messageError = ViewBag.MessageError;
+}
+
+<div class="row mb-3">
+    <div class="col-md-12">
+        <div class="">
+            <div class=""><h6>Cajero / Retirar dinero</h6></div>
+            <hr />
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6 offset-md-3">
+        @if (messageError != null)
+        {
+            <div class="alert alert-danger" role="alert">@messageError</div>
+        }
+
+        <div class="card border-light">
+            <div class="card-header p-2">
+                Retiro de efectivo
+            </div>
+            <form asp-action="HaveMoney" asp-controller="Transaction" method="post" id="frmTransaction">
+                <div class="card-body p-2">
+                    <div class="form-group m-0">
+                        <label asp-for="NoAccount" class="col-form-label-sm font-weight-bold m-0"></label>
+                        <input asp-for="NoAccount" type="text" class="form-control form-control-sm" id="txtNoAccount" />
+                        <span asp-validation-for="NoAccount" class="form-text text-danger"></span>
+                    </div>
+                    <div class="form-group m-0">
+                        <label asp-for="Amount" class="col-form-label-sm font-weight-bold m-0"></label>
+                        <input asp-for="Amount" type="text" class="form-control form-control-sm" id="txtAmount" />
+                        <span asp-validation-for="Amount" class="form-text text-danger"></span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <input type="button" value="Guardar" class="btn btn-success"
+                           onclick="ConfirmTransaction()" />
+                    <a asp-controller="Home" asp-action="Index" class="btn btn-primary">Regresar</a>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/js/sweetalert.js"></script>
+    <script src="~/js/generic.js"></script>
+    <script>
+
+        window.setTimeout(function () {
+            $(".alert").fadeTo(500, 0).slideUp(500, function () {
+                $(this).remove();
+            });
+        }, 4000);
+
+        const ConfirmTransaction = () => {
+            mostrarModal("¿Está seguro que quiere retirar efectivo?").then(result => {
+                if (result.isConfirmed) {
+                    const frmTransaction = document.getElementById("frmTransaction");
+                    frmTransaction.submit();
+                }
+            });
+        }
+
+    </script>
+}

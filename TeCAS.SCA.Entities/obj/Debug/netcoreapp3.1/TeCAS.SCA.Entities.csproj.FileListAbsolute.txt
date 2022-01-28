@@ -1,0 +1,10 @@
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.Entities\bin\Debug\netcoreapp3.1\TeCAS.SCA.Entities.deps.json
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.Entities\bin\Debug\netcoreapp3.1\TeCAS.SCA.Entities.dll
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.Entities\bin\Debug\netcoreapp3.1\TeCAS.SCA.Entities.pdb
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.Entities\obj\Debug\netcoreapp3.1\TeCAS.SCA.Entities.csproj.AssemblyReference.cache
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.Entities\obj\Debug\netcoreapp3.1\TeCAS.SCA.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.Entities\obj\Debug\netcoreapp3.1\TeCAS.SCA.Entities.AssemblyInfoInputs.cache
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.Entities\obj\Debug\netcoreapp3.1\TeCAS.SCA.Entities.AssemblyInfo.cs
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.Entities\obj\Debug\netcoreapp3.1\TeCAS.SCA.Entities.csproj.CoreCompileInputs.cache
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.Entities\obj\Debug\netcoreapp3.1\TeCAS.SCA.Entities.dll
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.Entities\obj\Debug\netcoreapp3.1\TeCAS.SCA.Entities.pdb

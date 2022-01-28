@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.22" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TeCAS.SCA.Entities\TeCAS.SCA.Entities.csproj" />
+    <ProjectReference Include="..\TeCAS.SCA.Helpers\TeCAS.SCA.Helpers.csproj" />
+    <ProjectReference Include="..\TeCAS.SCA.Services\TeCAS.SCA.Services.csproj" />
+  </ItemGroup>
+
+</Project>

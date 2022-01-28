@@ -1,0 +1,10 @@
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.Helpers\bin\Debug\netcoreapp3.1\TeCAS.SCA.Helpers.deps.json
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.Helpers\bin\Debug\netcoreapp3.1\TeCAS.SCA.Helpers.dll
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.Helpers\bin\Debug\netcoreapp3.1\TeCAS.SCA.Helpers.pdb
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.Helpers\obj\Debug\netcoreapp3.1\TeCAS.SCA.Helpers.csproj.AssemblyReference.cache
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.Helpers\obj\Debug\netcoreapp3.1\TeCAS.SCA.Helpers.GeneratedMSBuildEditorConfig.editorconfig
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.Helpers\obj\Debug\netcoreapp3.1\TeCAS.SCA.Helpers.AssemblyInfoInputs.cache
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.Helpers\obj\Debug\netcoreapp3.1\TeCAS.SCA.Helpers.AssemblyInfo.cs
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.Helpers\obj\Debug\netcoreapp3.1\TeCAS.SCA.Helpers.csproj.CoreCompileInputs.cache
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.Helpers\obj\Debug\netcoreapp3.1\TeCAS.SCA.Helpers.dll
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.Helpers\obj\Debug\netcoreapp3.1\TeCAS.SCA.Helpers.pdb

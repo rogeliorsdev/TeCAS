@@ -1,0 +1,13 @@
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.Services\bin\Debug\netcoreapp3.1\TeCAS.SCA.Services.deps.json
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.Services\bin\Debug\netcoreapp3.1\TeCAS.SCA.Services.dll
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.Services\bin\Debug\netcoreapp3.1\TeCAS.SCA.Services.pdb
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.Services\bin\Debug\netcoreapp3.1\TeCAS.SCA.Entities.dll
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.Services\bin\Debug\netcoreapp3.1\TeCAS.SCA.Entities.pdb
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.Services\obj\Debug\netcoreapp3.1\TeCAS.SCA.Services.csproj.AssemblyReference.cache
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.Services\obj\Debug\netcoreapp3.1\TeCAS.SCA.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.Services\obj\Debug\netcoreapp3.1\TeCAS.SCA.Services.AssemblyInfoInputs.cache
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.Services\obj\Debug\netcoreapp3.1\TeCAS.SCA.Services.AssemblyInfo.cs
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.Services\obj\Debug\netcoreapp3.1\TeCAS.SCA.Services.csproj.CoreCompileInputs.cache
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.Services\obj\Debug\netcoreapp3.1\TeCAS.SCA.Services.csproj.CopyComplete
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.Services\obj\Debug\netcoreapp3.1\TeCAS.SCA.Services.dll
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.Services\obj\Debug\netcoreapp3.1\TeCAS.SCA.Services.pdb

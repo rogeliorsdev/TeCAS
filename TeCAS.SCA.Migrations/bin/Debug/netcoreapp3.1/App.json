@@ -1,0 +1,4 @@
+{
+  "DataBaseProvider": "UseSqlServer",
+  "ConnectionString": "Server=DESKTOP-5ELM30R\\SQLEXPRESS;Database=TeCASDB;Trusted_Connection=True;MultipleActiveResultSets=True;"
+}

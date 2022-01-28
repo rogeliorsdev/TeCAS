@@ -1,0 +1,17 @@
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.DAL\bin\Debug\netcoreapp3.1\TeCAS.SCA.DAL.deps.json
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.DAL\bin\Debug\netcoreapp3.1\TeCAS.SCA.DAL.dll
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.DAL\bin\Debug\netcoreapp3.1\TeCAS.SCA.DAL.pdb
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.DAL\bin\Debug\netcoreapp3.1\TeCAS.SCA.Entities.dll
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.DAL\bin\Debug\netcoreapp3.1\TeCAS.SCA.Helpers.dll
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.DAL\bin\Debug\netcoreapp3.1\TeCAS.SCA.Services.dll
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.DAL\bin\Debug\netcoreapp3.1\TeCAS.SCA.Entities.pdb
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.DAL\bin\Debug\netcoreapp3.1\TeCAS.SCA.Helpers.pdb
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.DAL\bin\Debug\netcoreapp3.1\TeCAS.SCA.Services.pdb
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.DAL\obj\Debug\netcoreapp3.1\TeCAS.SCA.DAL.csproj.AssemblyReference.cache
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.DAL\obj\Debug\netcoreapp3.1\TeCAS.SCA.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.DAL\obj\Debug\netcoreapp3.1\TeCAS.SCA.DAL.AssemblyInfoInputs.cache
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.DAL\obj\Debug\netcoreapp3.1\TeCAS.SCA.DAL.AssemblyInfo.cs
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.DAL\obj\Debug\netcoreapp3.1\TeCAS.SCA.DAL.csproj.CoreCompileInputs.cache
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.DAL\obj\Debug\netcoreapp3.1\TeCAS.SCA.DAL.csproj.CopyComplete
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.DAL\obj\Debug\netcoreapp3.1\TeCAS.SCA.DAL.dll
+C:\tecas-sca-project\TeCAS.SCA\TeCAS.SCA.DAL\obj\Debug\netcoreapp3.1\TeCAS.SCA.DAL.pdb

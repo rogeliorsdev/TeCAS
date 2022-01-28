@@ -1,0 +1,116 @@
+﻿@model CustomerVM
+@{
+    ViewData["Title"] = "AddCustomer";
+
+    string actionTitle = "Registro de cliente";
+    bool editForm = false;
+    string messageError = ViewBag.MessageError;
+}
+
+@if (Model != null && Model.Id != Guid.Empty) { actionTitle = "Edición de cliente"; editForm = true; }
+
+<div class="row mb-3">
+    <div class="col-md-12">
+        <div class="">
+            <div class=""><h6>Clientes / @actionTitle</h6></div>
+            <hr />
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6 offset-md-3">
+        @if (messageError != null)
+        {
+            <div class="alert alert-danger" role="alert">@messageError</div>
+        }
+
+        <div class="card border-light">
+            <div class="card-header p-2">
+                @if (editForm)
+                {
+                    <i class="fas fa-edit"></i> <span>Edición de cliente</span>
+                }
+                else
+                {
+                    <i class="fas fa-user-plus"></i> <span>Registro de cliente</span>
+                }
+            </div>
+            <form asp-action="SaveCustomer" asp-controller="Customer" method="post" id="frmAddCustomer">
+                <div class="card-body p-2">
+                    @if (editForm)
+                    {
+                        <div class="form-group m-0">
+                            <label asp-for="Id" class="col-form-label-sm font-weight-bold m-0"></label>
+                            <input asp-for="Id" type="text" class="form-control form-control-sm" id="txtId" readonly />
+                            <span asp-validation-for="Id" class="form-text text-danger"></span>
+                        </div>
+                    }
+                    <div class="form-group m-0">
+                        <label asp-for="FullName" class="col-form-label-sm font-weight-bold m-0"></label>
+                        <input asp-for="FullName" type="text" class="form-control form-control-sm" id="txtFullName" />
+                        <span asp-validation-for="FullName" class="form-text text-danger"></span>
+                    </div>
+                    <div class="form-group  m-0">
+                        <label asp-for="INE" class="col-form-label-sm font-weight-bold m-0"></label>
+                        <input asp-for="INE" type="text" class="form-control form-control-sm" id="txtINE" />
+                        <span asp-validation-for="INE" class="form-text text-danger"></span>
+                    </div>
+                    <div class="form-group m-0">
+                        <label asp-for="Phone" class="col-form-label-sm font-weight-bold m-0"></label>
+                        <input asp-for="Phone" type="text" class="form-control form-control-sm" id="txtPhone" />
+                        <span asp-validation-for="Phone" class="form-text text-danger"></span>
+                    </div>
+                    <div class="form-group  m-0">
+                        <label asp-for="Address" class="col-form-label-sm font-weight-bold m-0"></label>
+                        <input asp-for="Address" type="text" class="form-control form-control-sm" id="txtAddress" />
+                        <span asp-validation-for="Address" class="form-text text-danger"></span>
+                    </div>
+                    @if (editForm)
+                    {
+                        <div class="form-group  m-0">
+                            <label asp-for="Status" class="col-form-label-sm font-weight-bold m-0"></label>
+                            <input asp-for="Status" type="text" class="form-control form-control-sm" id="txtStatus" readonly />
+                            <span asp-validation-for="Status" class="form-text text-danger"></span>
+                        </div>
+                        <div class="form-group  m-0">
+                            <label asp-for="CreateAt" class="col-form-label-sm font-weight-bold m-0"></label>
+                            <input asp-for="CreateAt" type="text" class="form-control form-control-sm" id="txtCreateAt" readonly />
+                            <span asp-validation-for="CreateAt" class="form-text text-danger"></span>
+                        </div>
+                    }
+
+                </div>
+                <div class="card-footer">
+                    <input type="button" value="Guardar" class="btn btn-success"
+                           onclick="ConfirmAddCustomer()" />
+                    <a asp-action="Index" class="btn btn-primary">Regresar</a>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/js/sweetalert.js"></script>
+    <script src="~/js/generic.js"></script>
+    <script>
+
+        window.setTimeout(function () {
+            $(".alert").fadeTo(500, 0).slideUp(500, function () {
+                $(this).remove();
+            });
+        }, 4000);
+
+        const ConfirmAddCustomer = () => {
+            mostrarModal().then(result => {
+                if (result.isConfirmed) {
+                    const frmAddCustomer = document.getElementById("frmAddCustomer");
+                    frmAddCustomer.submit();
+                }
+            });
+        }
+
+    </script>
+}

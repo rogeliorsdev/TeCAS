@@ -1,0 +1,96 @@
+﻿@model AccountVM
+@{
+    ViewData["Title"] = "AddAccount";
+
+    string actionTitle = "Registro de cuenta";
+    bool editForm = false;
+    string messageError = ViewBag.MessageError;
+
+    Guid customerId = ViewBag.customerId;
+}
+
+@if (Model != null && Model.Id != Guid.Empty) { actionTitle = "Edición de cuenta"; editForm = true; }
+
+<div class="row mb-3">
+    <div class="col-md-12">
+        <div class="">
+            <div class=""><h6>Cuentas / @actionTitle</h6></div>
+            <hr />
+        </div>
+    </div>
+</div>
+
+@if (messageError != null) {
+    <div class="alert alert-danger" role="alert">@messageError</div>
+}
+
+<div class="row">
+    <div class="col-md-6 offset-md-3">
+        <div class="card border-light">
+            <div class="card-header p-2">
+                @if (editForm)
+                {
+                    <i class="fas fa-edit"></i> <span>Edición de cuenta</span>
+                }
+                else
+                {
+                    <i class="fas fa-user-plus"></i> <span>Registro de cuenta</span>
+                }
+            </div>
+            <form asp-action="SaveAccount" asp-controller="Account" method="post" id="frmAddAccount">
+                <div class="card-body p-2">
+                    <div class="form-group m-0">
+
+                        <input asp-for="CustomerId" type="hidden" value="@customerId" />
+                        <label asp-for="NoAccount" class="col-form-label-sm font-weight-bold m-0"></label>
+                        <input asp-for="NoAccount" type="text" class="form-control form-control-sm" id="txtNoAccount" />
+                        <span asp-validation-for="NoAccount" class="form-text text-danger"></span>
+                    </div>
+                    <div class="form-group  m-0">
+                        <label asp-for="TypeAccount" class="col-form-label-sm font-weight-bold m-0"></label>
+                        <select asp-for="TypeAccount" asp-items="ViewBag.TypeAccount" class="form-control form-control-sm" id="txtTypeAccount"></select>
+                        <span asp-validation-for="TypeAccount" class="form-text text-danger"></span>
+                    </div>
+                    @if (editForm)
+                    {
+                        <div class="form-group  m-0">
+                            <input asp-for="Id" type="hidden" />
+                            <label asp-for="CreateAt" class="col-form-label-sm font-weight-bold m-0"></label>
+                            <input asp-for="CreateAt" type="text" class="form-control form-control-sm" id="txtCreateAt" readonly />
+                            <span asp-validation-for="CreateAt" class="form-text text-danger"></span>
+                        </div>
+                    }
+                </div>
+                <div class="card-footer">
+                    <input type="button" value="Guardar" class="btn btn-success"
+                           onclick="ConfirmAddAccount()" />
+                    <a asp-action="Index" class="btn btn-primary">Regresar</a>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/sweetalert.js"></script>
+    <script src="~/js/generic.js"></script>
+    <script>
+
+        window.setTimeout(function () {
+            $(".alert").fadeTo(500, 0).slideUp(500, function () {
+                $(this).remove();
+            });
+        }, 4000);
+
+        const ConfirmAddAccount = () => {
+            mostrarModal().then(result => {
+                if (result.isConfirmed) {
+                    const frmAddAccount = document.getElementById("frmAddAccount");
+                    frmAddAccount.submit();
+                }
+            });
+        }
+
+    </script>
+}

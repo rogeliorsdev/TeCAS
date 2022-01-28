@@ -1,0 +1,63 @@
+﻿@model IEnumerable<CustomerVM>
+@{
+    ViewData["Title"] = "Index";
+
+}
+
+<div class="row mb-3">
+    <div class="col-md-12">
+        <div class="">
+            <div class=""><h6>Clientes / Lista de clientes</h6></div>
+            <hr />
+        </div>
+    </div>
+</div>
+
+@if (@TempData["messageSuccess"] != null) {
+    <div class="alert alert-success" role="alert">@TempData["messageSuccess"]</div>
+}
+
+<a asp-action="AddCustomer" class="btn btn-success btn-sm mb-3">
+    <i class="fas fa-plus"></i> Cliente
+</a>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body p-2">
+                <table class="table" id="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>@Html.DisplayNameFor(model => model.FullName)</th>
+                            <th>@Html.DisplayNameFor(model => model.INE)</th>
+                            <th>@Html.DisplayNameFor(model => model.Phone)</th>
+                            <th>@Html.DisplayNameFor(model => model.Address)</th>
+                            <th>Operaciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbDatos"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/js/sweetalert.js"></script>
+    <script src="~/js/generic.js"></script>
+    <script>
+        window.onload = function () {
+            var url = "Customer/GetCustomers";
+            pintar(url,
+                ["fullName", "ine", "phone", "address"],
+                "id", "Customer", false, true);
+        }
+
+        window.setTimeout(function () {
+            $(".alert").fadeTo(500, 0).slideUp(500, function () {
+                $(this).remove();
+            });
+        }, 4000);
+
+    </script>
+}

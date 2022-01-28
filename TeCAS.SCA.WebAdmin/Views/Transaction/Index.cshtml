@@ -1,0 +1,56 @@
+﻿@model IEnumerable<TransactionVM>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="row mb-3">
+    <div class="col-md-12">
+        <div class="">
+            <div class=""><h6>Reportes / Reporte de transacciones</h6></div>
+            <hr />
+        </div>
+    </div>
+</div>
+
+@if (@TempData["messageSuccess"] != null) {
+    <div class="alert alert-success" role="alert">@TempData["messageSuccess"]</div>
+}
+
+<div class="card">
+    <div class="card-body p-2">
+        <table class="table" id="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.CustomerName)</th>
+                    <th>@Html.DisplayNameFor(model => model.NoAccount)</th>
+                    <th>@Html.DisplayNameFor(model => model.CurrentBalance)</th>
+                    <th>@Html.DisplayNameFor(model => model.Amount)</th>
+                    <th>@Html.DisplayNameFor(model => model.CreateAt)</th>
+                    <th>@Html.DisplayNameFor(model => model.TypeTransaction)</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="tbDatos"></tbody>
+        </table>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/sweetalert.js"></script>
+    <script src="~/js/generic.js"></script>
+    <script>
+        window.onload = function () {
+            var url = "Transaction/GetTransactions";
+            pintar(url,
+                ["customerName", "noAccount", "currentBalance", "amount", "createAt", "typeTransaction"],
+                "id", "Transaction", true, false);
+        }
+
+        window.setTimeout(function () {
+            $(".alert").fadeTo(500, 0).slideUp(500, function () {
+                $(this).remove();
+            });
+        }, 4000);
+
+    </script>
+} 

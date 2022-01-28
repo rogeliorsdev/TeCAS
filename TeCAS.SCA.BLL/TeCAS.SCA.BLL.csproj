@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TeCAS.SCA.DAL\TeCAS.SCA.DAL.csproj" />
+    <ProjectReference Include="..\TeCAS.SCA.Entities\TeCAS.SCA.Entities.csproj" />
+    <ProjectReference Include="..\TeCAS.SCA.Services\TeCAS.SCA.Services.csproj" />
+  </ItemGroup>
+
+</Project>
